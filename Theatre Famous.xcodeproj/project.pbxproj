@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5067650B1B601F2600EE4014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067650A1B601F2600EE4014 /* main.m */; };
+		5067650E1B601F2600EE4014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067650D1B601F2600EE4014 /* AppDelegate.m */; };
+		506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5067650F1B601F2600EE4014 /* Theatre_Famous.xcdatamodeld */; };
+		506765141B601F2600EE4014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765131B601F2600EE4014 /* ViewController.m */; };
+		506765171B601F2600EE4014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506765151B601F2600EE4014 /* Main.storyboard */; };
+		506765191B601F2600EE4014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506765181B601F2600EE4014 /* Images.xcassets */; };
+		5067651C1B601F2600EE4014 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067651A1B601F2600EE4014 /* LaunchScreen.xib */; };
+		506765281B601F2700EE4014 /* Theatre_FamousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765271B601F2700EE4014 /* Theatre_FamousTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		506765221B601F2700EE4014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 506764FD1B601F2600EE4014 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 506765041B601F2600EE4014;
+			remoteInfo = "Theatre Famous";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		506765051B601F2600EE4014 /* Theatre Famous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Theatre Famous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506765091B601F2600EE4014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5067650A1B601F2600EE4014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5067650C1B601F2600EE4014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5067650D1B601F2600EE4014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		506765101B601F2600EE4014 /* Theatre_Famous.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Theatre_Famous.xcdatamodel; sourceTree = "<group>"; };
+		506765121B601F2600EE4014 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		506765131B601F2600EE4014 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		506765161B601F2600EE4014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		506765181B601F2600EE4014 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5067651B1B601F2600EE4014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		506765211B601F2700EE4014 /* Theatre FamousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Theatre FamousTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506765261B601F2700EE4014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506765271B601F2700EE4014 /* Theatre_FamousTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Theatre_FamousTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		506765021B601F2600EE4014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5067651E1B601F2700EE4014 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		506764FC1B601F2600EE4014 = {
+			isa = PBXGroup;
+			children = (
+				506765071B601F2600EE4014 /* Theatre Famous */,
+				506765241B601F2700EE4014 /* Theatre FamousTests */,
+				506765061B601F2600EE4014 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		506765061B601F2600EE4014 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				506765051B601F2600EE4014 /* Theatre Famous.app */,
+				506765211B601F2700EE4014 /* Theatre FamousTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		506765071B601F2600EE4014 /* Theatre Famous */ = {
+			isa = PBXGroup;
+			children = (
+				5067650C1B601F2600EE4014 /* AppDelegate.h */,
+				5067650D1B601F2600EE4014 /* AppDelegate.m */,
+				506765121B601F2600EE4014 /* ViewController.h */,
+				506765131B601F2600EE4014 /* ViewController.m */,
+				506765151B601F2600EE4014 /* Main.storyboard */,
+				506765181B601F2600EE4014 /* Images.xcassets */,
+				5067651A1B601F2600EE4014 /* LaunchScreen.xib */,
+				5067650F1B601F2600EE4014 /* Theatre_Famous.xcdatamodeld */,
+				506765081B601F2600EE4014 /* Supporting Files */,
+			);
+			path = "Theatre Famous";
+			sourceTree = "<group>";
+		};
+		506765081B601F2600EE4014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506765091B601F2600EE4014 /* Info.plist */,
+				5067650A1B601F2600EE4014 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		506765241B601F2700EE4014 /* Theatre FamousTests */ = {
+			isa = PBXGroup;
+			children = (
+				506765271B601F2700EE4014 /* Theatre_FamousTests.m */,
+				506765251B601F2700EE4014 /* Supporting Files */,
+			);
+			path = "Theatre FamousTests";
+			sourceTree = "<group>";
+		};
+		506765251B601F2700EE4014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				506765261B601F2700EE4014 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		506765041B601F2600EE4014 /* Theatre Famous */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5067652B1B601F2700EE4014 /* Build configuration list for PBXNativeTarget "Theatre Famous" */;
+			buildPhases = (
+				506765011B601F2600EE4014 /* Sources */,
+				506765021B601F2600EE4014 /* Frameworks */,
+				506765031B601F2600EE4014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Theatre Famous";
+			productName = "Theatre Famous";
+			productReference = 506765051B601F2600EE4014 /* Theatre Famous.app */;
+			productType = "com.apple.product-type.application";
+		};
+		506765201B601F2700EE4014 /* Theatre FamousTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5067652E1B601F2700EE4014 /* Build configuration list for PBXNativeTarget "Theatre FamousTests" */;
+			buildPhases = (
+				5067651D1B601F2700EE4014 /* Sources */,
+				5067651E1B601F2700EE4014 /* Frameworks */,
+				5067651F1B601F2700EE4014 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				506765231B601F2700EE4014 /* PBXTargetDependency */,
+			);
+			name = "Theatre FamousTests";
+			productName = "Theatre FamousTests";
+			productReference = 506765211B601F2700EE4014 /* Theatre FamousTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		506764FD1B601F2600EE4014 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ASolo;
+				TargetAttributes = {
+					506765041B601F2600EE4014 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					506765201B601F2700EE4014 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 506765041B601F2600EE4014;
+					};
+				};
+			};
+			buildConfigurationList = 506765001B601F2600EE4014 /* Build configuration list for PBXProject "Theatre Famous" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 506764FC1B601F2600EE4014;
+			productRefGroup = 506765061B601F2600EE4014 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				506765041B601F2600EE4014 /* Theatre Famous */,
+				506765201B601F2700EE4014 /* Theatre FamousTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		506765031B601F2600EE4014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506765171B601F2600EE4014 /* Main.storyboard in Resources */,
+				5067651C1B601F2600EE4014 /* LaunchScreen.xib in Resources */,
+				506765191B601F2600EE4014 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5067651F1B601F2700EE4014 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		506765011B601F2600EE4014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5067650E1B601F2600EE4014 /* AppDelegate.m in Sources */,
+				5067650B1B601F2600EE4014 /* main.m in Sources */,
+				506765141B601F2600EE4014 /* ViewController.m in Sources */,
+				506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5067651D1B601F2700EE4014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506765281B601F2700EE4014 /* Theatre_FamousTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		506765231B601F2700EE4014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 506765041B601F2600EE4014 /* Theatre Famous */;
+			targetProxy = 506765221B601F2700EE4014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		506765151B601F2600EE4014 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				506765161B601F2600EE4014 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5067651A1B601F2600EE4014 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5067651B1B601F2600EE4014 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		506765291B601F2700EE4014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5067652A1B601F2700EE4014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5067652C1B601F2700EE4014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Theatre Famous/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5067652D1B601F2700EE4014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Theatre Famous/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5067652F1B601F2700EE4014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Theatre FamousTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Theatre Famous.app/Theatre Famous";
+			};
+			name = Debug;
+		};
+		506765301B601F2700EE4014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Theatre FamousTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Theatre Famous.app/Theatre Famous";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		506765001B601F2600EE4014 /* Build configuration list for PBXProject "Theatre Famous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506765291B601F2700EE4014 /* Debug */,
+				5067652A1B601F2700EE4014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5067652B1B601F2700EE4014 /* Build configuration list for PBXNativeTarget "Theatre Famous" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5067652C1B601F2700EE4014 /* Debug */,
+				5067652D1B601F2700EE4014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5067652E1B601F2700EE4014 /* Build configuration list for PBXNativeTarget "Theatre FamousTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5067652F1B601F2700EE4014 /* Debug */,
+				506765301B601F2700EE4014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5067650F1B601F2600EE4014 /* Theatre_Famous.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				506765101B601F2600EE4014 /* Theatre_Famous.xcdatamodel */,
+			);
+			currentVersion = 506765101B601F2600EE4014 /* Theatre_Famous.xcdatamodel */;
+			path = Theatre_Famous.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 506764FD1B601F2600EE4014 /* Project object */;
+}
