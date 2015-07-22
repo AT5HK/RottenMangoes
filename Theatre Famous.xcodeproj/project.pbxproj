@@ -15,6 +15,8 @@
 		506765191B601F2600EE4014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506765181B601F2600EE4014 /* Images.xcassets */; };
 		5067651C1B601F2600EE4014 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067651A1B601F2600EE4014 /* LaunchScreen.xib */; };
 		506765281B601F2700EE4014 /* Theatre_FamousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765271B601F2700EE4014 /* Theatre_FamousTests.m */; };
+		506765331B601FCC00EE4014 /* AvailableMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765321B601FCC00EE4014 /* AvailableMovies.m */; };
+		506765361B60207D00EE4014 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765351B60207D00EE4014 /* Movie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,11 @@
 		506765211B601F2700EE4014 /* Theatre FamousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Theatre FamousTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		506765261B601F2700EE4014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506765271B601F2700EE4014 /* Theatre_FamousTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Theatre_FamousTests.m; sourceTree = "<group>"; };
+		506765311B601FCC00EE4014 /* AvailableMovies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableMovies.h; sourceTree = "<group>"; };
+		506765321B601FCC00EE4014 /* AvailableMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableMovies.m; sourceTree = "<group>"; };
+		506765341B60207D00EE4014 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		506765351B60207D00EE4014 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		506765371B60513800EE4014 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,7 @@
 		506764FC1B601F2600EE4014 = {
 			isa = PBXGroup;
 			children = (
+				506765371B60513800EE4014 /* File */,
 				506765071B601F2600EE4014 /* Theatre Famous */,
 				506765241B601F2700EE4014 /* Theatre FamousTests */,
 				506765061B601F2600EE4014 /* Products */,
@@ -87,6 +95,10 @@
 				5067650D1B601F2600EE4014 /* AppDelegate.m */,
 				506765121B601F2600EE4014 /* ViewController.h */,
 				506765131B601F2600EE4014 /* ViewController.m */,
+				506765341B60207D00EE4014 /* Movie.h */,
+				506765351B60207D00EE4014 /* Movie.m */,
+				506765311B601FCC00EE4014 /* AvailableMovies.h */,
+				506765321B601FCC00EE4014 /* AvailableMovies.m */,
 				506765151B601F2600EE4014 /* Main.storyboard */,
 				506765181B601F2600EE4014 /* Images.xcassets */,
 				5067651A1B601F2600EE4014 /* LaunchScreen.xib */,
@@ -222,10 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506765361B60207D00EE4014 /* Movie.m in Sources */,
 				5067650E1B601F2600EE4014 /* AppDelegate.m in Sources */,
 				5067650B1B601F2600EE4014 /* main.m in Sources */,
 				506765141B601F2600EE4014 /* ViewController.m in Sources */,
 				506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */,
+				506765331B601FCC00EE4014 /* AvailableMovies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
