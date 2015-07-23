@@ -10,13 +10,16 @@
 		5067650B1B601F2600EE4014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067650A1B601F2600EE4014 /* main.m */; };
 		5067650E1B601F2600EE4014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067650D1B601F2600EE4014 /* AppDelegate.m */; };
 		506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5067650F1B601F2600EE4014 /* Theatre_Famous.xcdatamodeld */; };
-		506765141B601F2600EE4014 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765131B601F2600EE4014 /* ViewController.m */; };
 		506765171B601F2600EE4014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506765151B601F2600EE4014 /* Main.storyboard */; };
 		506765191B601F2600EE4014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506765181B601F2600EE4014 /* Images.xcassets */; };
 		5067651C1B601F2600EE4014 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067651A1B601F2600EE4014 /* LaunchScreen.xib */; };
 		506765281B601F2700EE4014 /* Theatre_FamousTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765271B601F2700EE4014 /* Theatre_FamousTests.m */; };
 		506765331B601FCC00EE4014 /* AvailableMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765321B601FCC00EE4014 /* AvailableMovies.m */; };
 		506765361B60207D00EE4014 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765351B60207D00EE4014 /* Movie.m */; };
+		5067653A1B6067CD00EE4014 /* MovieCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765391B6067CD00EE4014 /* MovieCollectionViewController.m */; };
+		5067653D1B606BF000EE4014 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067653C1B606BF000EE4014 /* MovieCollectionViewCell.m */; };
+		506765401B60807700EE4014 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067653F1B60807700EE4014 /* DetailViewController.m */; };
+		61F69EF2C81300E0D78EDDAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		264D0096BEDCAC21443117EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		506765051B601F2600EE4014 /* Theatre Famous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Theatre Famous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		506765091B601F2600EE4014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5067650A1B601F2600EE4014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5067650C1B601F2600EE4014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5067650D1B601F2600EE4014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		506765101B601F2600EE4014 /* Theatre_Famous.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Theatre_Famous.xcdatamodel; sourceTree = "<group>"; };
-		506765121B601F2600EE4014 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		506765131B601F2600EE4014 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		506765161B601F2600EE4014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		506765181B601F2600EE4014 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5067651B1B601F2600EE4014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -48,7 +50,15 @@
 		506765321B601FCC00EE4014 /* AvailableMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableMovies.m; sourceTree = "<group>"; };
 		506765341B60207D00EE4014 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
 		506765351B60207D00EE4014 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
-		506765371B60513800EE4014 /* File */ = {isa = PBXFileReference; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		506765371B60513800EE4014 /* podFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podFile; sourceTree = "<group>"; };
+		506765381B6067CD00EE4014 /* MovieCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewController.h; sourceTree = "<group>"; };
+		506765391B6067CD00EE4014 /* MovieCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewController.m; sourceTree = "<group>"; };
+		5067653B1B606BF000EE4014 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		5067653C1B606BF000EE4014 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		5067653E1B60807700EE4014 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5067653F1B60807700EE4014 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9562EF65D9F2960DAEAAE0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61F69EF2C81300E0D78EDDAA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +83,12 @@
 		506764FC1B601F2600EE4014 = {
 			isa = PBXGroup;
 			children = (
-				506765371B60513800EE4014 /* File */,
+				506765371B60513800EE4014 /* podFile */,
 				506765071B601F2600EE4014 /* Theatre Famous */,
 				506765241B601F2700EE4014 /* Theatre FamousTests */,
 				506765061B601F2600EE4014 /* Products */,
+				F01903C9C83B4543EA35FCB3 /* Pods */,
+				6A161203DC16A64882D0C883 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,12 +106,16 @@
 			children = (
 				5067650C1B601F2600EE4014 /* AppDelegate.h */,
 				5067650D1B601F2600EE4014 /* AppDelegate.m */,
-				506765121B601F2600EE4014 /* ViewController.h */,
-				506765131B601F2600EE4014 /* ViewController.m */,
+				506765381B6067CD00EE4014 /* MovieCollectionViewController.h */,
+				506765391B6067CD00EE4014 /* MovieCollectionViewController.m */,
+				5067653E1B60807700EE4014 /* DetailViewController.h */,
+				5067653F1B60807700EE4014 /* DetailViewController.m */,
 				506765341B60207D00EE4014 /* Movie.h */,
 				506765351B60207D00EE4014 /* Movie.m */,
 				506765311B601FCC00EE4014 /* AvailableMovies.h */,
 				506765321B601FCC00EE4014 /* AvailableMovies.m */,
+				5067653B1B606BF000EE4014 /* MovieCollectionViewCell.h */,
+				5067653C1B606BF000EE4014 /* MovieCollectionViewCell.m */,
 				506765151B601F2600EE4014 /* Main.storyboard */,
 				506765181B601F2600EE4014 /* Images.xcassets */,
 				5067651A1B601F2600EE4014 /* LaunchScreen.xib */,
@@ -134,6 +151,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6A161203DC16A64882D0C883 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F01903C9C83B4543EA35FCB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9562EF65D9F2960DAEAAE0A /* Pods.debug.xcconfig */,
+				264D0096BEDCAC21443117EA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5067652B1B601F2700EE4014 /* Build configuration list for PBXNativeTarget "Theatre Famous" */;
 			buildPhases = (
+				5400F6608DFB3597ADED36CD /* Check Pods Manifest.lock */,
 				506765011B601F2600EE4014 /* Sources */,
 				506765021B601F2600EE4014 /* Frameworks */,
 				506765031B601F2600EE4014 /* Resources */,
+				D4683BF486D1EC781916D00B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +265,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5400F6608DFB3597ADED36CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D4683BF486D1EC781916D00B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		506765011B601F2600EE4014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -237,9 +306,11 @@
 				506765361B60207D00EE4014 /* Movie.m in Sources */,
 				5067650E1B601F2600EE4014 /* AppDelegate.m in Sources */,
 				5067650B1B601F2600EE4014 /* main.m in Sources */,
-				506765141B601F2600EE4014 /* ViewController.m in Sources */,
+				506765401B60807700EE4014 /* DetailViewController.m in Sources */,
+				5067653A1B6067CD00EE4014 /* MovieCollectionViewController.m in Sources */,
 				506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */,
 				506765331B601FCC00EE4014 /* AvailableMovies.m in Sources */,
+				5067653D1B606BF000EE4014 /* MovieCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +434,7 @@
 		};
 		5067652C1B601F2700EE4014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9562EF65D9F2960DAEAAE0A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Theatre Famous/Info.plist";
@@ -373,6 +445,7 @@
 		};
 		5067652D1B601F2700EE4014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264D0096BEDCAC21443117EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Theatre Famous/Info.plist";
@@ -434,6 +507,7 @@
 				5067652D1B601F2700EE4014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5067652E1B601F2700EE4014 /* Build configuration list for PBXNativeTarget "Theatre FamousTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +516,7 @@
 				506765301B601F2700EE4014 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

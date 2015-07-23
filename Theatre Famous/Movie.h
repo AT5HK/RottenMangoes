@@ -11,9 +11,10 @@
 
 @interface Movie : NSObject
 
-@property (nonatomic) UIImage *moviePoster;
+@property (nonatomic) NSURL *moviePosterURL;
 @property (nonatomic) NSString *movieTitle;
 @property (nonatomic) NSString *movieSynopsis;
-- (instancetype)initWithTitle:(NSString*)title movieSynopsis:(NSString*)synopsis poster:(UIImage*)poster;
+@property (nonatomic) UIImage *posterImage;
+- (instancetype)initWithTitle:(NSString*)title movieSynopsis:(NSString*)synopsis URLForPoster:(NSURL*)posterURL;
 
 @end

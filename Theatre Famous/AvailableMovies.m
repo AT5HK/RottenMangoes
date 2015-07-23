@@ -6,8 +6,13 @@
 //  Copyright (c) 2015 ASolo. All rights reserved.
 //
 
+
 #import "AvailableMovies.h"
 #import "Movie.h"
+#import "MovieCollectionViewController.h"
+
+
+static NSString * const imgIdentifier = @"dkpu1ddg7pbsk.cloudfront.net";
 
 @interface AvailableMovies ()
 @property (nonatomic) NSArray *inTheatreMovies;
@@ -15,12 +20,10 @@
 
 @implementation AvailableMovies
 
-- (void)someMethodThatTakesABlock:(void (^)(NSArray*movies))blockName {
-    
-}
 
--(NSArray*)movieGrab:(void (^)(NSArray*movies))success {
-    NSString *urlString = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=55gey28y6ygcr8fjy4ty87ek&page_limit=1&page=50";
+
+-(void)movieGrab:(void (^)(NSArray*movies))success {
+    NSString *urlString = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=55gey28y6ygcr8fjy4ty87ek";
     NSURL *url = [NSURL URLWithString:urlString];
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -32,24 +35,27 @@
                 NSError *serializationError = nil;
                 self.inTheatreMovies = [[NSJSONSerialization JSONObjectWithData:moviesData options:0 error:&serializationError]valueForKey:@"movies"];
                 success(self.inTheatreMovies);
-                
             }
         }];
     [task resume];
-    return self.inTheatreMovies;
 }
 
--(NSArray*)createMovieObjArray {
-    NSMutableArray *createdMovieArray;
+-(void)createMovieObjArray:(void (^)(NSArray*movies))moviesComplete {
+    NSMutableArray *createdMovieArray = [NSMutableArray array];
     [self movieGrab:^(NSArray *movies) {
         for (NSDictionary *movieProperties in movies) {
+            NSString *fullURL = [movieProperties valueForKeyPath:@"posters.original"];
+            NSRange range = NSMakeRange([fullURL rangeOfString:imgIdentifier].location, fullURL.length-1);
+            NSString *suffixURL = [fullURL substringFromIndex:range.location];
+            NSURL *posterURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://%@", suffixURL]];
             
-//            self.movie.movieSynopsis = [movieProperties valueForKey:@"synopsis"];
-//            self.movie.movieTitle = [movieProperties valueForKey:@"title"];
-//            [createdMovieArray addObject:self.movie];
+            Movie *movie = [[Movie alloc]initWithTitle:[movieProperties valueForKey:@"title"]
+                                         movieSynopsis:[movieProperties valueForKey:@"synopsis"]
+                                        URLForPoster:posterURL];
+            [createdMovieArray addObject:movie];
         }
+        moviesComplete(createdMovieArray);
     }];
-    return createdMovieArray;
 }
 
 

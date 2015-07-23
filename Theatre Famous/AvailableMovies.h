@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AvailableMovies : NSObject <NSURLSessionDelegate>
--(NSDictionary*)movieGrab:(void (^)(NSArray*movies))success;
+
+-(void)createMovieObjArray:(void (^)(NSArray*movies))moviesComplete;
+
 @end

@@ -10,13 +10,13 @@
 
 @implementation Movie
 
-- (instancetype)initWithTitle:(NSString*)title movieSynopsis:(NSString*)synopsis poster:(UIImage*)moviePoster
+- (instancetype)initWithTitle:(NSString*)title movieSynopsis:(NSString*)synopsis URLForPoster:(NSURL*)posterURL
 {
     self = [super init];
     if (self) {
         self.movieTitle = title;
         self.movieSynopsis = synopsis;
-        self.moviePoster = moviePoster;
+        self.moviePosterURL = posterURL;
     }
     return self;
 }
