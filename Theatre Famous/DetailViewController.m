@@ -28,6 +28,7 @@
     [super viewDidLoad];
     self.textViewWidth.constant = self.view.frame.size.width;
     self.availableMovies = [[AvailableMovies alloc]init];
+    self.navigationItem.title = self.movieDetail.movieTitle;
     [self.availableMovies grabReviews:^(NSArray *arrayOfReviewQuotes) {
         self.reviewsArray = arrayOfReviewQuotes;
         dispatch_async(dispatch_get_main_queue(), ^{

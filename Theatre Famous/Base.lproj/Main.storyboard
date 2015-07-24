@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="858" y="358"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="dm2-88-hbt">
             <objects>
                 <viewController id="WaR-R9-q6P" customClass="DetailViewController" sceneMemberID="viewController">
@@ -102,13 +102,19 @@
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eaI-Q1-a08" id="cfH-0u-WcU">
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jAM-wo-h09">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="jAM-wo-h09">
                                                             <rect key="frame" x="8" y="0.0" width="584" height="43"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="jAM-wo-h09" secondAttribute="bottom" constant="-8" id="dQb-ij-czS"/>
+                                                        <constraint firstItem="jAM-wo-h09" firstAttribute="leading" secondItem="cfH-0u-WcU" secondAttribute="leadingMargin" id="ltA-2G-raE"/>
+                                                        <constraint firstItem="jAM-wo-h09" firstAttribute="trailing" secondItem="cfH-0u-WcU" secondAttribute="trailingMargin" id="syD-0J-stB"/>
+                                                        <constraint firstItem="jAM-wo-h09" firstAttribute="top" secondItem="cfH-0u-WcU" secondAttribute="topMargin" constant="-8" id="y1C-Bm-Uff"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
                                                     <outlet property="reviewQuoteLabel" destination="jAM-wo-h09" id="JVH-JY-UJG"/>
@@ -132,16 +138,6 @@
                                     <constraint firstItem="srH-rf-9na" firstAttribute="leading" secondItem="Fwj-8C-9UK" secondAttribute="leading" id="pZI-Za-bZG"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfg-ey-b80">
-                                <rect key="frame" x="454" y="72" width="130" height="30"/>
-                                <state key="normal" title="Show Theatre Map">
-                                    <color key="titleColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="tAd-zo-1UV" kind="show" identifier="MapViewController" id="Yzm-Wx-UwR"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -151,11 +147,16 @@
                             <constraint firstItem="WYz-lM-ed9" firstAttribute="top" secondItem="hsC-dE-fxA" secondAttribute="bottom" id="LXl-8l-ogL"/>
                             <constraint firstItem="foZ-Y5-sJv" firstAttribute="top" secondItem="Fwj-8C-9UK" secondAttribute="bottom" id="O00-4u-MeQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fwj-8C-9UK" secondAttribute="trailing" constant="-16" id="RhK-50-Tcf"/>
-                            <constraint firstItem="cfg-ey-b80" firstAttribute="top" secondItem="hsC-dE-fxA" secondAttribute="bottom" constant="8" id="gR9-xI-Aek"/>
                             <constraint firstItem="Fwj-8C-9UK" firstAttribute="top" secondItem="WYz-lM-ed9" secondAttribute="bottom" constant="-2" id="rQZ-Pb-hCO"/>
-                            <constraint firstItem="cfg-ey-b80" firstAttribute="trailing" secondItem="e6j-uI-ezI" secondAttribute="trailingMargin" id="zlk-2r-I4q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="nzk-af-mnH">
+                        <barButtonItem key="rightBarButtonItem" title="Show Map" id="tSz-cv-Inz">
+                            <connections>
+                                <segue destination="tAd-zo-1UV" kind="show" identifier="MapViewController" id="zPL-zf-gIk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="posterImage" destination="WYz-lM-ed9" id="dvH-n9-Sxi"/>
                         <outlet property="synopsisView" destination="HPo-Ym-9Cj" id="Bfl-xJ-sgG"/>

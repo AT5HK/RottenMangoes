@@ -19,7 +19,6 @@
 @property (nonatomic) Mapping *mapping;
 @property (nonatomic) CLLocation *currentLocation;
 @property (nonatomic) CLPlacemark *placemark;
-@property (nonatomic) BOOL alreadyLoaded;
 
 @end
 
@@ -27,7 +26,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.alreadyLoaded = NO;
     self.availableMovies = [[AvailableMovies alloc]init];
     self.mapping = [[Mapping alloc]init];
     
@@ -36,6 +34,7 @@
     self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
     [self.locationManager requestWhenInUseAuthorization];
     self.locationManager.distanceFilter = 500;
+    
     [self.locationManager startUpdatingLocation];
 }
 
@@ -54,7 +53,7 @@
         // Set a movement threshold for new events.
         self.locationManager.distanceFilter = 500; // meters
     }
-    ;
+    
     retrievedCurrentLocation();
 }
 
@@ -71,7 +70,7 @@
         } break;
         case kCLAuthorizationStatusAuthorizedWhenInUse:
         case kCLAuthorizationStatusAuthorizedAlways: {
-            [_locationManager startUpdatingLocation]; //Will update location immediately
+            [self.locationManager startUpdatingLocation]; //Will update location immediately
         } break;
         default:
             break;
@@ -82,14 +81,14 @@
 {
     self.currentLocation = [locations objectAtIndex:0];
     [self.locationManager stopUpdatingLocation];
-    CLGeocoder *geocoder = [[CLGeocoder alloc] init] ;
-    [geocoder reverseGeocodeLocation:self.currentLocation completionHandler:^(NSArray *placemarks, NSError *error)
-     {
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder reverseGeocodeLocation:self.currentLocation completionHandler:^(NSArray *placemarks, NSError *error) {
          if (!error) {
              self.placemark = [placemarks objectAtIndex:0];
-             if (!self.alreadyLoaded) {
                  [self startStandardUpdates:^{
-                     [self.availableMovies nearestTheatresForMovie:self.movie currentLocationPlaceMark:self.placemark finishBlock:^(NSArray *parsedLocations) {
+                     [self.availableMovies nearestTheatresForMovie:self.movie
+                                          currentLocationPlaceMark:self.placemark
+                                                       finishBlock:^(NSArray *parsedLocations) {
                          if (parsedLocations) {
                              NSArray *theatreObjs = [self.mapping createTheatreObjArray:parsedLocations];
                              dispatch_async(dispatch_get_main_queue(), ^{
@@ -101,8 +100,6 @@
                          }
                      }];
                  }];
-             }
-//             NSString *locatedAt = [[placemark.addressDictionary valueForKey:@"FormattedAddressLines"] componentsJoinedByString:@", "];
              NSLog(@"placemark: %@",self.placemark.postalCode);
          }
          else {
