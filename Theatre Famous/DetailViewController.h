@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Movie.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic) Movie *movieDetail;
 @property (nonatomic) UIImage *passedImage;

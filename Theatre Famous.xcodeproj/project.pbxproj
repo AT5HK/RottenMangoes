@@ -19,6 +19,12 @@
 		5067653A1B6067CD00EE4014 /* MovieCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765391B6067CD00EE4014 /* MovieCollectionViewController.m */; };
 		5067653D1B606BF000EE4014 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067653C1B606BF000EE4014 /* MovieCollectionViewCell.m */; };
 		506765401B60807700EE4014 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067653F1B60807700EE4014 /* DetailViewController.m */; };
+		506765431B61610A00EE4014 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765421B61610A00EE4014 /* MapViewController.m */; };
+		506765451B61618A00EE4014 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506765441B61618A00EE4014 /* CoreLocation.framework */; };
+		506765471B61619100EE4014 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506765461B61619100EE4014 /* MapKit.framework */; };
+		5067654D1B618E3300EE4014 /* Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067654C1B618E3300EE4014 /* Mapping.m */; };
+		506765501B61A1D700EE4014 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067654F1B61A1D700EE4014 /* Theatre.m */; };
+		506765531B61E6A400EE4014 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765521B61E6A400EE4014 /* DetailTableViewCell.m */; };
 		61F69EF2C81300E0D78EDDAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +63,16 @@
 		5067653C1B606BF000EE4014 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
 		5067653E1B60807700EE4014 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		5067653F1B60807700EE4014 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		506765411B61610A00EE4014 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		506765421B61610A00EE4014 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		506765441B61618A00EE4014 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		506765461B61619100EE4014 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5067654B1B618E3300EE4014 /* Mapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapping.h; sourceTree = "<group>"; };
+		5067654C1B618E3300EE4014 /* Mapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mapping.m; sourceTree = "<group>"; };
+		5067654E1B61A1D700EE4014 /* Theatre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theatre.h; sourceTree = "<group>"; };
+		5067654F1B61A1D700EE4014 /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
+		506765511B61E6A400EE4014 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		506765521B61E6A400EE4014 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9562EF65D9F2960DAEAAE0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506765471B61619100EE4014 /* MapKit.framework in Frameworks */,
+				506765451B61618A00EE4014 /* CoreLocation.framework in Frameworks */,
 				61F69EF2C81300E0D78EDDAA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,10 +128,18 @@
 				506765391B6067CD00EE4014 /* MovieCollectionViewController.m */,
 				5067653E1B60807700EE4014 /* DetailViewController.h */,
 				5067653F1B60807700EE4014 /* DetailViewController.m */,
+				506765411B61610A00EE4014 /* MapViewController.h */,
+				506765421B61610A00EE4014 /* MapViewController.m */,
+				5067654E1B61A1D700EE4014 /* Theatre.h */,
+				5067654F1B61A1D700EE4014 /* Theatre.m */,
+				5067654B1B618E3300EE4014 /* Mapping.h */,
+				5067654C1B618E3300EE4014 /* Mapping.m */,
 				506765341B60207D00EE4014 /* Movie.h */,
 				506765351B60207D00EE4014 /* Movie.m */,
 				506765311B601FCC00EE4014 /* AvailableMovies.h */,
 				506765321B601FCC00EE4014 /* AvailableMovies.m */,
+				506765511B61E6A400EE4014 /* DetailTableViewCell.h */,
+				506765521B61E6A400EE4014 /* DetailTableViewCell.m */,
 				5067653B1B606BF000EE4014 /* MovieCollectionViewCell.h */,
 				5067653C1B606BF000EE4014 /* MovieCollectionViewCell.m */,
 				506765151B601F2600EE4014 /* Main.storyboard */,
@@ -154,6 +180,8 @@
 		6A161203DC16A64882D0C883 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				506765461B61619100EE4014 /* MapKit.framework */,
+				506765441B61618A00EE4014 /* CoreLocation.framework */,
 				9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -306,10 +334,14 @@
 				506765361B60207D00EE4014 /* Movie.m in Sources */,
 				5067650E1B601F2600EE4014 /* AppDelegate.m in Sources */,
 				5067650B1B601F2600EE4014 /* main.m in Sources */,
+				506765431B61610A00EE4014 /* MapViewController.m in Sources */,
 				506765401B60807700EE4014 /* DetailViewController.m in Sources */,
 				5067653A1B6067CD00EE4014 /* MovieCollectionViewController.m in Sources */,
+				506765531B61E6A400EE4014 /* DetailTableViewCell.m in Sources */,
+				506765501B61A1D700EE4014 /* Theatre.m in Sources */,
 				506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */,
 				506765331B601FCC00EE4014 /* AvailableMovies.m in Sources */,
+				5067654D1B618E3300EE4014 /* Mapping.m in Sources */,
 				5067653D1B606BF000EE4014 /* MovieCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Theatre Famous/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -449,6 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Theatre Famous/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

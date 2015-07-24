@@ -6,10 +6,14 @@
 //  Copyright (c) 2015 ASolo. All rights reserved.
 //
 
+@class Movie;
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface AvailableMovies : NSObject <NSURLSessionDelegate>
 
 -(void)createMovieObjArray:(void (^)(NSArray*movies))moviesComplete;
+-(void)nearestTheatresForMovie:(Movie*)movie currentLocationPlaceMark:(CLPlacemark*)placeMark finishBlock:(void (^)(NSArray*parsedLocations))lookUpComplete;
+-(void)grabReviews:(void(^)(NSArray*arrayOfReviews))lookupComplete;
 
 @end

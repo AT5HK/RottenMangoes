@@ -23,7 +23,7 @@ static NSString * const imgIdentifier = @"dkpu1ddg7pbsk.cloudfront.net";
 
 
 -(void)movieGrab:(void (^)(NSArray*movies))success {
-    NSString *urlString = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=55gey28y6ygcr8fjy4ty87ek";
+    NSString *urlString = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=55gey28y6ygcr8fjy4ty87ek&page=1";
     NSURL *url = [NSURL URLWithString:urlString];
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -58,6 +58,44 @@ static NSString * const imgIdentifier = @"dkpu1ddg7pbsk.cloudfront.net";
     }];
 }
 
+-(void)nearestTheatresForMovie:(Movie*)movie currentLocationPlaceMark:(CLPlacemark*)placeMark finishBlock:(void (^)(NSArray*parsedLocations))lookUpComplete {
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSString *urlString = [NSString stringWithFormat:@"http://lighthouse-movie-showtimes.herokuapp.com/theatres.json?address=%@&movie=%@",placeMark.postalCode ,movie.movieTitle];
+    NSString* encodedURLString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *URL = [NSURL URLWithString:encodedURLString];
+    NSURLSessionTask *task = [session dataTaskWithURL:URL completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (!error) {
+            NSError *jsonFail = nil;
+            NSDictionary *theatreData = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            if (!jsonFail) {
+                NSArray *nearestTheatreLocations = [theatreData valueForKey:@"theatres"];
+                lookUpComplete(nearestTheatreLocations);
+            }
+        }
+        else {
+            NSLog(@"%@ Call Failed !!!!",error);
+        }
+    }];
+    [task resume];
+}
 
+-(void)grabReviews:(void(^)(NSArray*arrayOfReviewQuotes))lookupComplete {
+    NSString *stringURL = @"http://api.rottentomatoes.com/api/public/v1.0/movies/771359910/reviews.json?apikey=55gey28y6ygcr8fjy4ty87ek";
+    NSURL *url = [NSURL URLWithString:stringURL];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionTask *task = [session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (!error) {
+            NSError *jsonFail = nil;
+            NSMutableArray *arrayOfReviewQuotes = [NSMutableArray array];
+            NSArray *reviewsArray = [[NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonFail]valueForKey:@"reviews"];
+            for (NSDictionary *reviewDictionary in reviewsArray) {
+                NSString *reviewQuote = [reviewDictionary valueForKey:@"quote"];
+                [arrayOfReviewQuotes addObject:reviewQuote];
+            }
+            lookupComplete(arrayOfReviewQuotes);
+        }
+    }];
+    [task resume];
+}
 
 @end
