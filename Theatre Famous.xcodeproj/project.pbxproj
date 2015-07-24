@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5067650B1B601F2600EE4014 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067650A1B601F2600EE4014 /* main.m */; };
 		5067650E1B601F2600EE4014 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067650D1B601F2600EE4014 /* AppDelegate.m */; };
-		506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5067650F1B601F2600EE4014 /* Theatre_Famous.xcdatamodeld */; };
 		506765171B601F2600EE4014 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506765151B601F2600EE4014 /* Main.storyboard */; };
 		506765191B601F2600EE4014 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506765181B601F2600EE4014 /* Images.xcassets */; };
 		5067651C1B601F2600EE4014 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067651A1B601F2600EE4014 /* LaunchScreen.xib */; };
@@ -25,6 +24,11 @@
 		5067654D1B618E3300EE4014 /* Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067654C1B618E3300EE4014 /* Mapping.m */; };
 		506765501B61A1D700EE4014 /* Theatre.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067654F1B61A1D700EE4014 /* Theatre.m */; };
 		506765531B61E6A400EE4014 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 506765521B61E6A400EE4014 /* DetailTableViewCell.m */; };
+		50DADD781B62E173002873C7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DADD771B62E173002873C7 /* Realm.framework */; };
+		50DADD7A1B62E205002873C7 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DADD791B62E205002873C7 /* libc++.dylib */; };
+		50DADD7E1B62E41B002873C7 /* RLMTheatres.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD7D1B62E41B002873C7 /* RLMTheatres.m */; };
+		50DADD811B62E42A002873C7 /* RLMMovies.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD801B62E42A002873C7 /* RLMMovies.m */; };
+		50DADD841B62E44A002873C7 /* RLMShowtimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 50DADD831B62E44A002873C7 /* RLMShowtimes.m */; };
 		61F69EF2C81300E0D78EDDAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +49,6 @@
 		5067650A1B601F2600EE4014 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5067650C1B601F2600EE4014 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5067650D1B601F2600EE4014 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		506765101B601F2600EE4014 /* Theatre_Famous.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Theatre_Famous.xcdatamodel; sourceTree = "<group>"; };
 		506765161B601F2600EE4014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		506765181B601F2600EE4014 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5067651B1B601F2600EE4014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -73,6 +76,14 @@
 		5067654F1B61A1D700EE4014 /* Theatre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theatre.m; sourceTree = "<group>"; };
 		506765511B61E6A400EE4014 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
 		506765521B61E6A400EE4014 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		50DADD771B62E173002873C7 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		50DADD791B62E205002873C7 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		50DADD7C1B62E41B002873C7 /* RLMTheatres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMTheatres.h; sourceTree = "<group>"; };
+		50DADD7D1B62E41B002873C7 /* RLMTheatres.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMTheatres.m; sourceTree = "<group>"; };
+		50DADD7F1B62E42A002873C7 /* RLMMovies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMMovies.h; sourceTree = "<group>"; };
+		50DADD801B62E42A002873C7 /* RLMMovies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMMovies.m; sourceTree = "<group>"; };
+		50DADD821B62E44A002873C7 /* RLMShowtimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMShowtimes.h; sourceTree = "<group>"; };
+		50DADD831B62E44A002873C7 /* RLMShowtimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMShowtimes.m; sourceTree = "<group>"; };
 		9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9562EF65D9F2960DAEAAE0A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50DADD7A1B62E205002873C7 /* libc++.dylib in Frameworks */,
+				50DADD781B62E173002873C7 /* Realm.framework in Frameworks */,
 				506765471B61619100EE4014 /* MapKit.framework in Frameworks */,
 				506765451B61618A00EE4014 /* CoreLocation.framework in Frameworks */,
 				61F69EF2C81300E0D78EDDAA /* libPods.a in Frameworks */,
@@ -101,6 +114,7 @@
 		506764FC1B601F2600EE4014 = {
 			isa = PBXGroup;
 			children = (
+				50DADD771B62E173002873C7 /* Realm.framework */,
 				506765371B60513800EE4014 /* podFile */,
 				506765071B601F2600EE4014 /* Theatre Famous */,
 				506765241B601F2700EE4014 /* Theatre FamousTests */,
@@ -122,6 +136,7 @@
 		506765071B601F2600EE4014 /* Theatre Famous */ = {
 			isa = PBXGroup;
 			children = (
+				50DADD7B1B62E3DE002873C7 /* Realm */,
 				5067650C1B601F2600EE4014 /* AppDelegate.h */,
 				5067650D1B601F2600EE4014 /* AppDelegate.m */,
 				506765381B6067CD00EE4014 /* MovieCollectionViewController.h */,
@@ -145,7 +160,6 @@
 				506765151B601F2600EE4014 /* Main.storyboard */,
 				506765181B601F2600EE4014 /* Images.xcassets */,
 				5067651A1B601F2600EE4014 /* LaunchScreen.xib */,
-				5067650F1B601F2600EE4014 /* Theatre_Famous.xcdatamodeld */,
 				506765081B601F2600EE4014 /* Supporting Files */,
 			);
 			path = "Theatre Famous";
@@ -177,9 +191,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		50DADD7B1B62E3DE002873C7 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				50DADD7C1B62E41B002873C7 /* RLMTheatres.h */,
+				50DADD7D1B62E41B002873C7 /* RLMTheatres.m */,
+				50DADD7F1B62E42A002873C7 /* RLMMovies.h */,
+				50DADD801B62E42A002873C7 /* RLMMovies.m */,
+				50DADD821B62E44A002873C7 /* RLMShowtimes.h */,
+				50DADD831B62E44A002873C7 /* RLMShowtimes.m */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
 		6A161203DC16A64882D0C883 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50DADD791B62E205002873C7 /* libc++.dylib */,
 				506765461B61619100EE4014 /* MapKit.framework */,
 				506765441B61618A00EE4014 /* CoreLocation.framework */,
 				9C0C6FDE5A2E6EFCA0757F30 /* libPods.a */,
@@ -339,10 +367,12 @@
 				5067653A1B6067CD00EE4014 /* MovieCollectionViewController.m in Sources */,
 				506765531B61E6A400EE4014 /* DetailTableViewCell.m in Sources */,
 				506765501B61A1D700EE4014 /* Theatre.m in Sources */,
-				506765111B601F2600EE4014 /* Theatre_Famous.xcdatamodeld in Sources */,
 				506765331B601FCC00EE4014 /* AvailableMovies.m in Sources */,
 				5067654D1B618E3300EE4014 /* Mapping.m in Sources */,
 				5067653D1B606BF000EE4014 /* MovieCollectionViewCell.m in Sources */,
+				50DADD841B62E44A002873C7 /* RLMShowtimes.m in Sources */,
+				50DADD811B62E42A002873C7 /* RLMMovies.m in Sources */,
+				50DADD7E1B62E41B002873C7 /* RLMTheatres.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +499,10 @@
 			baseConfigurationReference = F9562EF65D9F2960DAEAAE0A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Theatre Famous/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -481,6 +515,10 @@
 			baseConfigurationReference = 264D0096BEDCAC21443117EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Theatre Famous/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -553,19 +591,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5067650F1B601F2600EE4014 /* Theatre_Famous.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				506765101B601F2600EE4014 /* Theatre_Famous.xcdatamodel */,
-			);
-			currentVersion = 506765101B601F2600EE4014 /* Theatre_Famous.xcdatamodel */;
-			path = Theatre_Famous.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 506764FD1B601F2600EE4014 /* Project object */;
 }

@@ -10,17 +10,28 @@
 #import "AvailableMovies.h"
 #import "Movie.h"
 #import "MovieCollectionViewController.h"
+#import "RLMMovies.h"
 
 
 static NSString * const imgIdentifier = @"dkpu1ddg7pbsk.cloudfront.net";
 
 @interface AvailableMovies ()
+
 @property (nonatomic) NSArray *inTheatreMovies;
+@property  RLMRealm *realm;
+
 @end
 
 @implementation AvailableMovies
 
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _realm = [RLMRealm defaultRealm];
+    }
+    return self;
+}
 
 -(void)movieGrab:(void (^)(NSArray*movies))success {
     NSString *urlString = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=55gey28y6ygcr8fjy4ty87ek&page=1";
@@ -53,7 +64,7 @@ static NSString * const imgIdentifier = @"dkpu1ddg7pbsk.cloudfront.net";
                                          movieSynopsis:[movieProperties valueForKey:@"synopsis"]
                                         URLForPoster:posterURL];
             [createdMovieArray addObject:movie];
-        }
+            }
         moviesComplete(createdMovieArray);
     }];
 }

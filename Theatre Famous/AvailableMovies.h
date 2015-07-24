@@ -9,6 +9,7 @@
 @class Movie;
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <Realm/Realm.h>
 
 @interface AvailableMovies : NSObject <NSURLSessionDelegate>
 
